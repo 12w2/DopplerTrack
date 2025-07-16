@@ -1,0 +1,36 @@
+<launch>
+
+  <!-- ====================== Detection Node ====================== -->
+  <node name="detector_node" pkg="dopplertrack" type="detector_node" output="screen">
+  
+    <!-- Detection hyperparameters -->
+    <param name="ground_height" value="-7.3" />
+    <param name="default_bucket_size" value="0.8" />
+    <param name="delta_rho" value="0.2" />
+    <param name="delta_theta" value="0.4" />
+
+    <!-- NMS hyperparameters -->
+    <param name="iou_threshold" value="0.4" />
+    <param name="coverage_threshold" value="0.5" />
+    <param name="use_car_flag" value="false" />
+    <param name="debug_flag" value="true" />
+
+  </node>
+
+  <!-- ====================== Tracking Node ====================== -->
+  <node name="tracker_node" pkg="dopplertrack" type="tracker_node" output="screen">
+    <param name="output_dir" value="$(arg output_dir)"/>
+  </node>
+
+  <!-- ====================== Publisher Node (Delayed Start) ====================== -->
+  <node name="publisher_node"
+        pkg="dopplertrack"
+        type="publisher_node"
+        output="screen"
+        launch-prefix="bash -c 'sleep 5; exec $0 $@'">
+    <param name="type" value="aq" />
+    <param name="path" value="$(arg data_path)" />
+    <param name="start_frame" value="0" />
+  </node>
+
+</launch>
