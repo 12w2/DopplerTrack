@@ -120,6 +120,7 @@ private:
     std::vector<AQ_PointT> readAevaBinFile(const std::string& filename) {
         std::vector<AQ_PointT> points;
         std::ifstream file(filename, std::ios::binary);
+        std::cout<<"test:"<<filename<<std::endl;
         if (!file) {
             ROS_ERROR_STREAM("Failed to open Aeva file: " << filename);
             return points;
