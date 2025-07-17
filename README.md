@@ -106,6 +106,4 @@ If you find this work useful, please consider to cite our paper:
 ## 8. License
 
 - **Code**: [MIT License](./LICENSE)
-- **Data**: All datasets are licensed under  
-  [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
-  See [DATA_LICENSE.md](./DATA_LICENSE.md) for dataset details and attribution.
+- **Data**: All datasets are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). See [DATA_LICENSE.md](./DATA_LICENSE.md) for dataset details and attribution.
