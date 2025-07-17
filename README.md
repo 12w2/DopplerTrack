@@ -31,17 +31,20 @@ After downloading the dataset, replace the existing `data/` folder in your proje
 #### Directory Structure
 The dataset is organized as follows:
 
+```bash
+data/
 ├── dynamic_pcd
-│   ├── Aeva-car
-│   ├── Aq-car
-│   ├── Intersection
-│   └── Straight
+│ ├── Aeva-car
+│ ├── Aq-car
+│ ├── Intersection
+│ └── Straight
 ├── original_bin
-│   ├── Aeva-car
-│   ├── Aq-car
-│   ├── Intersection
-│   └── Straight
+│ ├── Aeva-car
+│ ├── Aq-car
+│ ├── Intersection
+│ └── Straight
 └── README.md
+```
 
 ### 2.3 Install and Build
 
