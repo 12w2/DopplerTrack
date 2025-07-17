@@ -66,12 +66,12 @@ roslaunch dopplertrack dopplertarck_<dataset>.launch
 ```
 
 Parameter description:
-- dataset: Name of the dataset (Straight, Intersection, Aq-car, or Aeva-car)
+- dataset: Name of the dataset (straight, intersection, aq-car, or aeva-car)
 
 
 Example:
 ```bash
-roslaunch dopplertrack dopplertarck_Aq_car.launch
+roslaunch dopplertrack dopplertarck_aq_car.launch
 ```
 
 
