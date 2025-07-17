@@ -71,7 +71,7 @@ Parameter description:
 
 Example:
 ```bash
-roslaunch dopplertrack dopplertarck_aq_car.launch output_dir:=~/results/label_straight data_path:=~/dataset/Straight
+roslaunch dopplertrack dopplertarck_Aq_car.launch
 ```
 
 
