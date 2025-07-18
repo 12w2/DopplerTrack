@@ -6,7 +6,7 @@
 This paper proposes DopplerTrack, a simple yet effective learning-free tracking method tailored for FMCW LiDAR. DopplerTrack harnesses Doppler velocity for efficient point cloud preprocessing and object detection with O(N) complexity. Furthermore, by exploring the potential motion directions of objects, it reconstructs the full velocity vector, enabling more direct and precise motion prediction. Extensive experiments on four datasets demonstrate that DopplerTrack outperforms existing learning-free and learning-based methods, achieving state-of-the-art tracking performance with strong generalization across diverse scenarios. Moreover, DopplerTrack runs efficiently at 120 Hz on a mobile CPU, making it highly practical for real-world deployment. 
 
 ## 1. News
-- [2025-7-16] The code has been released.
+- [2025-7-16] The code and datasets has been released.
 - [2025-6-16] Our work is accepted for IROS2025.🎉
 
 ## 2. Installation
