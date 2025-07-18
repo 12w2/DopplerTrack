@@ -42,21 +42,26 @@ After downloading the dataset, replace the existing `data/` folder in your proje
 
 #### Directory Structure
 The dataset is organized as follows:
-
 ```bash
-data/
 ├── dynamic_pcd
-│ ├── Aeva-car
-│ ├── Aq-car
-│ ├── Intersection
-│ └── Straight
+│   ├── Aeva-car
+│   ├── Aq-car
+│   ├── Intersection
+│   └── Straight
 ├── original_bin
+│   ├── Aeva-car
+│   ├── Aq-car
+│   ├── Intersection
+│   └── Straight
+├── original_annotation
 │ ├── Aeva-car
 │ ├── Aq-car
 │ ├── Intersection
 │ └── Straight
 └── README.md
 ```
+#### Annotation Format  
+The `original_annotation/` directory contains annotation files in `.json` format. These annotations were generated using the [SUSTechPOINTS](https://github.com/naurril/SUSTechPOINTS) labeling tool — a 3D point cloud annotation platform for autonomous driving. The output results provided later in this work are also compatible with SUSTechPOINTS, allowing users to visualize both the original annotations and the outputs within the same interface.
 
 
 
@@ -105,6 +110,12 @@ python eval.py  Aq-car
 We  refer to [CVC Cluster](https://github.com/wangx1996/Lidar-Segementation) for detection and [hungarian_optimizer](https://github.com/RocShi/hungarian_optimizer) for matching.
 
 We sincerely thank the authors of these works for their valuable contributions.
+
+## 6. Contact
+Please contact me with any questions or suggestions!
+
+Yubin Zeng: zengyubin42@gmail.com
+
 ## 7. Citation
 
 If you find this work useful, please consider to cite our paper:
@@ -112,4 +123,6 @@ If you find this work useful, please consider to cite our paper:
 ## 8. License
 
 - **Code**: [MIT License](./LICENSE)
-- **Data**: All datasets are licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). See [DATA_LICENSE.md](./DATA_LICENSE.md) for dataset details and attribution.
+- **Data**: All datasets are licensed under  
+  [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
+  See [DATA_LICENSE.md](./DATA_LICENSE.md) for dataset details and attribution.
