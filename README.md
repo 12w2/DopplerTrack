@@ -20,7 +20,19 @@ The following is the tested environment for this package:
 - PCL 1.10 (from ros-noetic)
 - OpenCV 4.2 (from ros-noetic)
 
-### 2.2 Data 
+### 2.2 Install and Build
+
+```bash
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+git clone https://github.com/12w2/DopplerTrack.git
+cd ..
+catkin_make
+source devel/setup.bash
+```
+
+
+### 2.3 Data 
 #### Download
 Please fill out the form below to request access to the dataset. We will send you the download link after receiving your request.
 [Click here to fill out the data request form (Google Form)](https://docs.google.com/forms/d/e/1FAIpQLSc2T57lVPA2QQ2BXVziZfxVbae0rwpnx1lm-ydJEMg_J5TYSQ/viewform?usp=dialog)
@@ -46,16 +58,7 @@ data/
 └── README.md
 ```
 
-### 2.3 Install and Build
 
-```bash
-mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/src
-git clone https://github.com/12w2/DopplerTrack.git
-cd ..
-catkin_make
-source devel/setup.bash
-```
 
 ## 3. Run
 To run the module, choose one of the four predefined datasets by selecting the corresponding launch file. Use the following command format:
